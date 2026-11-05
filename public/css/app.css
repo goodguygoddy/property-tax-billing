@@ -1,0 +1,86 @@
+:root {
+    --ink: #1f2933;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #1f6f5f;
+    --accent-soft: #e6f2ef;
+    --warn: #b45309;
+    --warn-soft: #fef3c7;
+    --error-soft: #fee2e2;
+    --error: #991b1b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink);
+    background: #fafaf9;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+
+.site-header { background: #fff; border-bottom: 1px solid var(--line); }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.brand { font-weight: 700; color: var(--accent); text-decoration: none; }
+.site-header nav a { margin-left: 1.75rem; color: var(--muted); text-decoration: none; }
+.site-header nav a.active, .site-header nav a:hover { color: var(--ink); }
+
+main.container { padding: 2.5rem 1rem 4rem; }
+
+section { margin-top: 3rem; }
+section > p { margin: 0; }
+
+h1 { font-size: 1.75rem; margin: 0 0 1.5rem; }
+h2 { font-size: 1.2rem; margin: 0 0 1rem; }
+h3 { font-size: 1rem; margin: 0; }
+
+.intro { margin: 0 0 1.75rem; }
+
+a { color: var(--accent); }
+code { background: var(--accent-soft); padding: 0.1em 0.35em; border-radius: 3px; }
+
+.crumbs { color: var(--muted); margin: 0 0 0.5rem; }
+.muted { color: var(--muted); }
+
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); }
+th, td { padding: 0.8rem 1rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+tbody tr:last-child td { border-bottom: 0; }
+th { font-weight: 600; background: #f3f4f6; font-size: 0.85rem; }
+tfoot th { background: #fff; }
+.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.compact th, table.compact td { padding: 0.5rem 0.75rem; font-size: 0.85rem; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 0 0 1rem; }
+.stats div { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 1rem 1.1rem; }
+.stats dt { color: var(--muted); font-size: 0.8rem; margin-bottom: 0.35rem; }
+.stats dd { margin: 0; font-size: 1.2rem; font-weight: 600; }
+
+.document { background: #fff; border: 1px solid var(--line); border-radius: 6px; margin-bottom: 2rem; overflow: hidden; }
+.document header { display: flex; align-items: baseline; gap: 1.25rem; padding: 1rem 1.25rem; background: var(--accent-soft); }
+.document header span { color: var(--muted); font-size: 0.9rem; flex: 1; }
+.document header .total { font-size: 1.1rem; }
+.document table { border: 0; }
+
+.detail-row td { background: #fcfcfb; padding: 0.6rem 1rem 0.9rem; }
+.breakdown summary { cursor: pointer; color: var(--accent); font-size: 0.9rem; padding: 0.2rem 0; }
+.breakdown table { margin-top: 1rem; }
+.steps { margin: 1.25rem 0 0.5rem; padding-left: 1.25rem; font-size: 0.9rem; }
+.steps li { margin-bottom: 0.35rem; }
+
+.badge { display: inline-block; padding: 0.05em 0.5em; border-radius: 999px; background: var(--warn-soft); color: var(--warn); font-size: 0.8rem; margin-right: 0.25rem; }
+.badge-final { background: var(--accent-soft); color: var(--accent); }
+.badge-pending { background: #f3f4f6; color: var(--muted); }
+
+.flash { background: var(--accent-soft); color: var(--accent); border: 1px solid #bcdcd3; padding: 0.8rem 1.1rem; border-radius: 6px; margin-bottom: 2rem; }
+.errors { background: var(--error-soft); color: var(--error); border: 1px solid #fca5a5; padding: 0.8rem 1.1rem; border-radius: 6px; margin-bottom: 1.5rem; max-width: 480px; }
+.errors ul { margin: 0; padding-left: 1.25rem; }
+
+.form { max-width: 480px; background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 1.75rem; }
+.form label { display: block; margin-bottom: 1.4rem; font-weight: 600; font-size: 0.9rem; }
+.form label .muted { font-weight: 400; }
+.form input, .form select { display: block; width: 100%; margin-top: 0.45rem; padding: 0.6rem 0.7rem; font: inherit; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; }
+.form button { margin-top: 0.5rem; background: var(--accent); color: #fff; border: 0; padding: 0.7rem 1.3rem; border-radius: 4px; font: inherit; font-weight: 600; cursor: pointer; }

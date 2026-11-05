@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {"id": "P1", "client_id": "C1", "homestead": true,  "jurisdictions": ["ISD", "CNTY", "CITY"]},
+    {"id": "P2", "client_id": "C2", "homestead": false, "jurisdictions": ["ISD", "CNTY", "CITY"]},
+    {"id": "P3", "client_id": "C2", "homestead": false, "jurisdictions": ["ISD", "CNTY"]},
+    {"id": "P4", "client_id": "C2", "homestead": false, "jurisdictions": ["ISD", "CNTY", "CITY"]},
+    {"id": "P5", "client_id": "C3", "homestead": true,  "jurisdictions": ["ISD", "CNTY"]},
+    {"id": "P6", "client_id": "C3", "homestead": true,  "jurisdictions": ["ISD", "CNTY", "CITY"]}
+  ],
+  "events": [
+    {"source_id": "E1", "property_id": "P1", "recorded_at": "2026-06-01", "status": "final",   "noticed_value": 400000,  "final_value": 360000},
+    {"source_id": "E2", "property_id": "P2", "recorded_at": "2026-06-03", "status": "final",   "noticed_value": 300000,  "final_value": 285000},
+    {"source_id": "E3", "property_id": "P3", "recorded_at": "2026-06-05", "status": "final",   "noticed_value": 4000000, "final_value": 3200000},
+    {"source_id": "E4", "property_id": "P4", "recorded_at": "2026-06-05", "status": "final",   "noticed_value": 250000,  "final_value": 250000},
+    {"source_id": "E5", "property_id": "P5", "recorded_at": "2026-06-10", "status": "final",   "noticed_value": 120000,  "final_value": 118000},
+    {"source_id": "E6", "property_id": "P6", "recorded_at": "2026-06-12", "status": "pending", "noticed_value": 510000,  "final_value": null},
+    {"source_id": "E7", "property_id": "P1", "recorded_at": "2026-08-15", "status": "final",   "noticed_value": 400000,  "final_value": 350000}
+  ]
+}
